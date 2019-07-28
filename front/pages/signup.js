@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import { Form, Input, Checkbox, Button } from 'antd'
+import { signUpAction } from '../reducers/user';
+import { useDispatch } from 'react-redux'
 
 // useCallback 자식컴포넌트에 넘기는 함수는 유즈콜백으로 감싸준다
 
@@ -20,6 +22,7 @@ const Signup = () => {
     const [term, setTerm] = useState(false)
     const [passwordError, setPasswordError] = useState(false)
     const [termError, setTermError] = useState(false)
+    const dispatch = useDispatch()
 
     const onSubmit = useCallback((e) => {
         e.preventDefault()
@@ -29,13 +32,11 @@ const Signup = () => {
         if (!term) {
             return setTermError(true)
         }
-        console.log({
+        dispatch(signUpAction({
             id,
-            nick,
             password,
-            passwordCheck,
-            term
-        })
+            nick,
+        }))
     })
     const onChangeId = useCallback((e) => {
         setId(e.target.value)

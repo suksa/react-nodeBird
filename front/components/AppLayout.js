@@ -1,18 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import { Menu, Input, Button, Row, Col, Card, Avatar } from 'antd'
+import { Menu, Input, Button, Row, Col } from 'antd'
+import { useSelector } from 'react-redux'
 import LoginForm from '../components/LoginForm'
-
-const dummy = {
-    nickname: '제로초',
-    Post: [],
-    Followings: [],
-    Followers: [],
-    isLoggedIn: false,
-}
+import UserProfile from '../components/UserProfile'
 
 // eslint-disable-next-line react/prop-types
 const AppLayout = ({ children }) => { 
+    const { isLoggedIn } = useSelector(state => state.user)
     return (
         <>
             <Menu mode="horizontal">
@@ -25,22 +20,9 @@ const AppLayout = ({ children }) => {
             <Link href="/signup"><Button>회원가입</Button></Link>
             <Row>
                 <Col xs={24} md={8}>
-                    {dummy.isLoggedIn
-                        ?
-                        <Card
-                            actions={[
-                                <div key="twit">짹짹<br />{dummy.Post.length}</div>,
-                                <div key="following">팔로잉<br />{dummy.Followings.length}</div>,
-                                <div key="follwer">팔로워<br />{dummy.Followers.length}</div>
-                            ]}
-                        >
-                            <Card.Meta
-                                avatar={<Avatar>{dummy.nickname[0]}</Avatar>}
-                                title={dummy.nickname}
-                            />
-                        </Card>
-                        :
-                        <LoginForm />
+                    {isLoggedIn
+                        ?<UserProfile />
+                        :<LoginForm />
                     }
                 </Col>
                 <Col xs={24} md={8}>2</Col>
