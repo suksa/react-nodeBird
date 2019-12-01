@@ -1,0 +1,45 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_app.js": 0,
+      "multi private-next-pages/index.js": 1,
+      "multi private-next-pages/profile.js": 2,
+      "multi private-next-pages/signup.js": 3,
+      "multi next/dist/pages/_error": 4,
+      "multi next/dist/pages/_document": 5
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\_app.js": 0,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\_document.js": 1,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\_error.js": 2,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\index.js": 3,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\profile.js": 4,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\signup.js": 5,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\_app.js": 6,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\_document.js": 7,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\_error.js": 8,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\index.js": 9,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\profile.js": 10,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\signup.js": 11
+    },
+    "bySource": {},
+    "usedIds": [
+      10,
+      11,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

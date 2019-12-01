@@ -1,0 +1,34 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 2,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\_app.js": 3,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\_error.js": 4,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\index.js": 5,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\profile.js": 6,
+      "static\\zz1Qdvk44oOZ2IKVMXDWj\\pages\\signup.js": 7,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\_app.js": 8,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\_error.js": 9,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\index.js": 10,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\profile.js": 11,
+      "static\\y839J595ivKtK44E-BhsN\\pages\\signup.js": 12
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      2,
+      8,
+      9
+    ]
+  }
+}
